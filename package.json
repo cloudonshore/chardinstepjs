@@ -1,0 +1,28 @@
+{
+  "name": "chardinstep.js",
+  "version": "1.0.0",
+  "description": "Simple overlay instructions for your apps. (with steps)",
+  "main": "chardinstepjs.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cloudonshore/chardinstep.js.git"
+  },
+  "keywords": [
+    "overlay"
+  ],
+  "author": "Sam Walker",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/cloudonshore/chardinstep.js/issues"
+  },
+  "homepage": "http://heelhook.github.io/chardin.js/",
+  "dependencies": {
+    "jquery": "^1.6.0"
+  }
+}

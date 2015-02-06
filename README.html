@@ -1,0 +1,130 @@
+<h1>ChardinStep.js</h1>
+
+<p><strong>Simple overlay instructions for your apps (with steps). </strong></p>
+
+<p><a href="http://heelhook.github.com/chardin.js/">Check out a demo</a>.</p>
+
+<p>Chardin.js is a jQuery plugin that creates a simple overlay to display instructions on existent elements. It is inspired by
+the recent Gmail new composer tour which I loved.</p>
+
+<p><img src="https://raw.github.com/heelhook/chardin.js/master/example/img/chardin.png" title="chardin" alt="chardin" /><br/>
+<a href="http://en.wikipedia.org/wiki/Jean-Baptiste-Sim%C3%A9on_Chardin">Jean-Baptiste-Siméon Chardin</a></p>
+
+<h2>Installing</h2>
+
+<p>Simple! Fork this repo or download <a href="https://github.com/heelhook/chardin.js/blob/master/chardinjs.css">chardinjs.css</a> and <a href="https://github.com/heelhook/chardin.js/blob/master/chardinjs.min.js">chardinjs.min.js</a> and add the following assets to your HTML:</p>
+
+<p>```HTML
+<link href="chardinjs.css" rel="stylesheet"></p>
+
+<script src="chardinjs.min.js"></script>
+
+
+<p>```</p>
+
+<h3>Installing in the rails asset pipeline (optional)</h3>
+
+<p>There&rsquo;s a <a href="https://github.com/heelhook/chardin.js-rails"><code>chardinjs-rails</code></a> gem.</p>
+
+<h3>Building (optional)</h3>
+
+<p>If you choose to fork the repo you can build the assets running</p>
+
+<pre><code>rake compile
+</code></pre>
+
+<h2>Adding data for the instructions</h2>
+
+<p>Add the instructions to your elements:</p>
+
+<p><code>data-intro</code>: Text to show with the instructions<br/>
+<code>data-position</code>: (<code>left</code>, <code>top</code>, <code>right</code>, <code>bottom</code>), where to place the text with respect to the element</p>
+
+<p><code>HTML
+&lt;img src="img/chardin.png" data-intro="An awesome 18th-century painter, who found beauty in everyday, common things." data-position="right" /&gt;
+</code></p>
+
+<h2>Running</h2>
+
+<p>Once you have your elements ready you can show instructions running</p>
+
+<p><code>Javascript
+$('body').chardinJs('start')
+</code></p>
+
+<p>If you would rather run ChardinJs confined to a particular container (instead of using the whole document) you can
+change <code>body</code> to some other selector.</p>
+
+<p><code>Javascript
+$('.container').chardinJs('start')
+</code></p>
+
+<h2>Methods</h2>
+
+<h3>.chardinJs(&lsquo;start&rsquo;)</h3>
+
+<p>Start ChardinJs in the selector.</p>
+
+<h3>.chardinJs(&lsquo;toggle&rsquo;)</h3>
+
+<p>Toggle ChardinJs.</p>
+
+<h3>.chardinJs(&lsquo;stop&rsquo;)</h3>
+
+<p>Make your best guess. That&rsquo;s right! Stops ChardinJs in the selector.</p>
+
+<h2>Events</h2>
+
+<h3>&lsquo;chardinJs:start&rsquo;</h3>
+
+<p>Triggered when chardinJs is correctly started.</p>
+
+<h3>&lsquo;chardinJs:stop&rsquo;</h3>
+
+<p>Triggered when chardinJs is stopped.</p>
+
+<h2>Author</h2>
+
+<p><a href="https://github.com/heelhook">Pablo Fernandez</a></p>
+
+<h3>Contributors</h3>
+
+<ul>
+<li><a href="https://github.com/jweir">John Weir</a></li>
+<li><a href="https://github.com/felipeclopes">felipeclopes</a></li>
+<li><a href="https://github.com/fiveminuteargument">Bobby Jack</a></li>
+<li><a href="https://github.com/syabro">Maxim Syabro</a></li>
+<li><a href="https://github.com/nmeum">nmeum</a></li>
+<li><a href="https://github.com/printercu">printercu</a></li>
+</ul>
+
+
+<h2>Contributions</h2>
+
+<p>If you want to contribute, please:</p>
+
+<ul>
+<li>Fork the project.</li>
+<li>Make your feature addition or bug fix.</li>
+<li>Add yourself to the list of contributors in the README.md.</li>
+<li>Send me a pull request on Github.</li>
+</ul>
+
+
+<h2>License</h2>
+
+<p>Copyright 2013 Pablo Fernandez</p>
+
+<p>Licensed under the Apache License, Version 2.0 (the &ldquo;License&rdquo;);
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at</p>
+
+<p>http://www.apache.org/licenses/LICENSE-2.0</p>
+
+<p>Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an &ldquo;AS IS&rdquo; BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.</p>
+
+<p><a href="https://bitdeli.com/free" title="Bitdeli Badge"><img src="https://d2weczhvl823v0.cloudfront.net/heelhook/chardin.js/trend.png" alt="Bitdeli Badge" /></a></p>
